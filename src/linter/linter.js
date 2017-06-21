@@ -12,7 +12,10 @@ export function lint (ast) {
 
     unforgivableCurses.forEach(unforgivable => {
         let nodes = esquery.query(ast, `CallExpression[callee.name="${unforgivable}"] Identifier`);
-        nodes.forEach(identifier => identifier.name = 'alert');
+        nodes.forEach(identifier => {
+            if(identifier.name == unforgivable)
+                identifier.name = 'console.log'
+        });
     });
 
     return ast;

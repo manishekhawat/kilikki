@@ -1,14 +1,24 @@
-killSpell <~ 'XT Summit 2017'
+killConf <~ 'XT Summit 2017'
+killReaction <~ ''
+oik killConf == 'XT Summit 2017'
+    killReaction <~ 'WOW!'
+bhoo
+    killReaction <~ 'No!'
 
-killMagic [killSpell, killIntensity]
+killAttend [killConf, killLearn]
     killIntense <~ ''
-    sssss killI <~ 0 ~> killIntensity
+    damba killI <~ 0 ~> killLearn
+        oik killConf == 'XT Summit 2017'
+            killReaction <~ 'WOW!'
+
         killIntense <~ killIntense + '!'
 
-    <~ killSpell + killIntense
+    <~ killConf + killIntense
 
 killResult
-sssss killI <~ 0 ~> 10
-    killResult <~ killMagic <~ [killSpell, killI]
+damba killI <~ 0 ~> 10
+    killResult <~ killAttend <~ [killConf, killI]
 
 killCast <~ [killResult]
+killDarrfu <~ ['I am Back']
+

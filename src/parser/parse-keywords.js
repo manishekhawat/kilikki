@@ -24,6 +24,7 @@ export function expectKeywords (state, keywords) {
 
 export function matchKeywords (state, keywords) {
     let { type, value } = next(state);
+
     if (type !== KEYWORD) {
         return false;
     }

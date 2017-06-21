@@ -27,10 +27,8 @@ export function parseWhile (state) {
 
     let end = parseBinaryExpression(state);
     let test = new BinaryExpression(LESS_THAN_OR_EQUAL, startIdentifier, end, startIdentifier.loc);
-
     let update = new AssignmentExpression(startIdentifier, new BinaryExpression(ADD, startIdentifier, new Literal(1)), end.loc);
 
     let body = parseBlock(state);
-
     return new ForStatement(init, test, update, body, whileToken.loc);
 }

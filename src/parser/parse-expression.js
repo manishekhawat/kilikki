@@ -1,5 +1,5 @@
 // Constants:
-import { IF, WHILE } from '../keywords';
+import { IF, ELSE, ELSEIF, WHILE } from '../keywords';
 import { ASSIGNMENT } from '../operators';
 import { GROUPING_END, GROUPING_START } from '../punctuators';
 
@@ -17,6 +17,7 @@ import { matchPunctuators, expectPunctuators } from './parse-punctuators';
 import { parseReturn } from './parse-return';
 import { parseBinaryExpression } from './parse-value';
 import { parseWhile } from './parse-while';
+import { parseIf } from './parse-if';
 import { expectIndent, matchLineTerminatorOrEOF, expectLineTerminatorOrEOF } from './parse-whitespace';
 
 export function matchExpression (state) {
@@ -45,6 +46,8 @@ export function parseExpression (state, options) {
         expression = parseAssignment(state);
     } else if (matchKeywords(state, WHILE)) {
         expression = parseWhile(state);
+    } else if (matchKeywords(state, IF) || matchKeywords(state, ELSEIF) || matchKeywords(state, ELSE)) {
+        expression = parseIf(state);
     } else if (matchPunctuators(state, ASSIGNMENT)) {
         if (options.insideFunction) {
             expression = parseReturn(state);

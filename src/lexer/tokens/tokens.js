@@ -1,5 +1,5 @@
 // Dependencies:
-import { ignore } from '../lex-utils';
+import { ignore } from '../lexer-utils';
 
 export function addToken (state, type) {
     let { pos, source, start } = state;

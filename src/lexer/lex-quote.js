@@ -45,7 +45,7 @@ export function lexQuote (state, quoteChar) {
             } else {
                 escapeEncountered = false;
             }
-        } while(true);
+        } while(escapeEncountered);
     };
 }
 

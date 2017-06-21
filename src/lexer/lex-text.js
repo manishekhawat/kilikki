@@ -1,5 +1,5 @@
 // Utilities:
-import { backup, next, peek } from './lex-utils';
+import { backup, next, peek } from './lexer-utils';
 
 // Dependencies:
 import { EOF, isEOF } from './lex-eof';

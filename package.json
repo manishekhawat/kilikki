@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/manishekhawat/kilikki.git",
     "originalSource": "https://github.com/phenomnomnominal/parseltongue.git",
-    "originalAuthor" : "Craig Spence <craigspence0@gmail.com>"
+    "originalAuthor": "Craig Spence <craigspence0@gmail.com>"
   },
   "main": "dist/index.js",
   "watch": {

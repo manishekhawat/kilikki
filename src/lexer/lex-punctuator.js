@@ -10,7 +10,7 @@ const LENGTH_TWO = [
 const WORDS = [null, LENGTH_ONE, LENGTH_TWO];
 
 // Utilities:
-import { backup, next } from './lex-utils';
+import { backup, next } from './lexer-utils';
 
 // Dependencies:
 import { lexText } from './lex-text';

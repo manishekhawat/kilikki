@@ -1,12 +1,12 @@
-killSpell <~ 'XT Summit 2017'
+killConf <~ 'XT Summit 2017'
 
-killMagic [killSpell, killIntensity]
+killAttend [killConf, killLearn]
     killIntense <~ ''
-    sssss killI <~ 0 ~> killIntensity
+    damba killI <~ 0 ~> killLearn
         killIntense <~ killIntense + '!'
 
-    <~ killSpell + killIntense
+    <~ killConf + killIntense
 
 killResult
-sssss killI <~ 0 ~> 10
-    killResult <~ killMagic <~ [killSpell, killI]
+damba killI <~ 0 ~> 10
+    killResult <~ killAttend <~ [killConf, killI]

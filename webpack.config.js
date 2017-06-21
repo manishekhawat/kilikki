@@ -1,10 +1,10 @@
 let path = require('path');
 
 module.exports = {
-    entry: './dist/parseltongue.js',
+    entry: './dist/kilikki.js',
     output: {
         path: path.join(__dirname, 'bundle'),
-        filename: 'parseltongue.js'
+        filename: 'kilikki.js'
     },
     node: {
         fs: 'empty'

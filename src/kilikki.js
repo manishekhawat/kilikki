@@ -1,5 +1,5 @@
 // Constants:
-const KILIKKI_EXT = '.pt';
+const KILIKKI_EXT = '.kl';
 const JAVASCRIPT_EXT = '.js';
 
 // Utilities:
