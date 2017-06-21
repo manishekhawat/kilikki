@@ -1,13 +1,14 @@
 // Constants:
-const IMPERIO = 'imperio'
-const CRUCIO = 'crucio'
-const AVADAKEDAVRA = 'avadakedavra'
+const GROAKKI = 'groakki'
+const DUCK = 'duck'
+const DARRFU = 'darrfu'
+
 
 // Dependencies:
 import esquery from 'esquery';
 
 export function lint (ast) {
-    let unforgivableCurses =  [IMPERIO, CRUCIO, AVADAKEDAVRA];
+    let unforgivableCurses =  [GROAKKI, DUCK, DARRFU];
 
     unforgivableCurses.forEach(unforgivable => {
         let nodes = esquery.query(ast, `CallExpression[callee.name="${unforgivable}"] Identifier`);

@@ -1,0 +1,12 @@
+killSpell <~ 'XT Summit 2017'
+
+killMagic [killSpell, killIntensity]
+    killIntense <~ ''
+    sssss killI <~ 0 ~> killIntensity
+        killIntense <~ killIntense + '!'
+
+    <~ killSpell + killIntense
+
+killResult
+sssss killI <~ 0 ~> 10
+    killResult <~ killMagic <~ [killSpell, killI]

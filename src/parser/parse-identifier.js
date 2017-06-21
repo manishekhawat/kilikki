@@ -1,5 +1,5 @@
 // Constants:
-const IDENTIFIER_REGEX = /^sss/;
+const IDENTIFIER_REGEX = /^kill/;
 import { IDENTIFIER } from '../tokens/token-types';
 
 // Utilities:

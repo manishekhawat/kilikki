@@ -1,14 +1,12 @@
 {
-  "name": "parseltongue",
+  "name": "kilikki",
   "version": "0.1.0",
-  "author": "Craig Spence <craigspence0@gmail.com>",
+  "author": "Manish Shekhawat <manishekhawat@yahoo.co.in>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/phenomnomnominal/parseltongue.git"
-  },
-  "bugs": {
-    "url": "https://github.com/phenomnomnominal/parseltongue/issues",
-    "email": "craigspence0@gmail.com"
+    "url": "https://github.com/manishekhawat/kilikki.git",
+    "originalSource": "https://github.com/phenomnomnominal/parseltongue.git",
+    "originalAuthor" : "Craig Spence <craigspence0@gmail.com>"
   },
   "main": "dist/index.js",
   "watch": {
@@ -50,7 +48,7 @@
     "webpack": "2.2.1"
   },
   "bin": {
-    "parseltongue": "./bin/parseltongue"
+    "kilikki": "./bin/kilikki"
   },
   "dependencies": {
     "bluebird": "3.4.7",

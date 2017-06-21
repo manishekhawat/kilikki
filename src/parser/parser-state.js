@@ -7,9 +7,9 @@ export function createState (lexState) {
     state.currentScope = createScope(state);
     state.currentScope.identifiers = {
         'cast': 'function',
-        'imperio': 'function',
-        'crucio': 'function',
-        'avadakedavra': 'function'
+        'groakki': 'function',
+        'duck': 'function',
+        'darrfu': 'function'
     };
     return state;
 }

@@ -1,7 +1,7 @@
 // Constants:
 const FALSE = 'false';
 const IDENTIFIER_CHAR_REGEX = /[a-zA-Z]/;
-const IDENTIFIER_REGEX = /^sss[A-Z][a-zA-Z]*/;
+const IDENTIFIER_REGEX = /^kill[A-Z][a-zA-Z]*/;
 const NULL = 'null';
 const TRUE = 'true';
 
