@@ -7,6 +7,4 @@ killAttend [killConf, killLearn]
 
     <~ killConf + killIntense
 
-killResult
-damba killI <~ 0 ~> 10
-    killResult <~ killAttend <~ [killConf, killI]
+killAttend <~ [killConf, 5]
